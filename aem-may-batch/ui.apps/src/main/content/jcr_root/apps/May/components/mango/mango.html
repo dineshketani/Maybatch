@@ -1,4 +1,18 @@
+<div data-sly-use.model = com.adobe.aem.may.batch.core.models.MangoParent>
+
+    ${model.text}  <br>
+    ${model.des}   <br>
+    ${model.num} <br>
+
+    <div data-sly-list.item=${model.bookdetailswithmap}>
+
+    ${item.bookname} <br>
+    ${item.bookdes}  <br>
+    ${item.booknum}  <br>
+    ${item.bookpublishdate} <br>
 
 
-${properties.booknames}
+
+    </div>
+
 
