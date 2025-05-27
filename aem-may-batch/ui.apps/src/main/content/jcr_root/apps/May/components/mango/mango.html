@@ -1,29 +1,40 @@
+
+
+
+
 <div data-sly-use.model = com.adobe.aem.may.batch.core.models.MangoParent>
 
     ${model.text}  <br>
     ${model.des}   <br>
     ${model.num} <br>
 
+    <h1>PageName: ${model.articleTitle}</h1><br>
+    <h1>PagePath: ${model.articlePagePath}</h1><br>
+
+    <h2>UserId :${model.webContentNode}</h2><br>
+    <h2>Primary Type: ${model.articlePrimaryName}</h2> <br>
+
     <div data-sly-list.item=${model.bookdetailswithmap}>
 
-    ${item.bookname} <br>
-    ${item.bookdes}  <br>
-    ${item.booknum}  <br>
+         <h2 class="title" > ${item.bookname} </h2><br>
+         <h2 class="des" > ${item.bookdes} </h2> <br>
+         <h2 class="num" >${item.booknum} </hr> <br>
 
-   <h2>${ 'dd-MM-yyyy' @ format=item.bookpublishdate}</h2>
+         <h2 class = "day" >${ 'dd-MM-yyyy' @ format=item.bookpublishdate}</h2>
 
-    <div data-sly-list.item1=${item.bookdetailswithwriter}>
+      <div data-sly-list.item1=${item.bookdetailswithwriter}>
 
-     ${item1.writername} <br>
-    ${item1.writerinfo}  <br>
-    ${item1.writernum}  <br>
-   <h2>${ 'dd-MM-yyyy' @ format=item1.writerdob}</h2>
+         <h3 class ="writertitle">  ${item1.writername} </h3><br>
+         <h3 class ="writerdes">${item1.writerinfo}  </h3><br>
+         <h3 class ="writernum">${item1.writernum} </h3> <br>
+         <h3 class ="writerdob">${ 'dd-MM-yyyy' @ format=item1.writerdob}</h3>
 
-    </div>
-
-
+      </div>
 
 
     </div>
+ </div>
 
+<h2>JavaScript Alert</h2>
 
+<button class="button" onclick="myFunction()">Click me</button>
