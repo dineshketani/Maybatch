@@ -86,6 +86,11 @@
                     </items>
                 </field>
             </multifield>
+            <checkbox
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="[granite/ui/components/foundation/form/checkbox]"
+                fieldLabel="[Checkbox]"
+                name="[./checkbox]"/>
         </items>
     </content>
 </jcr:root>

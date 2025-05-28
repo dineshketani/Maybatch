@@ -1,7 +1,7 @@
 
 
 
-
+<h1>Use Htl code</h1>
 <div data-sly-use.model = com.adobe.aem.may.batch.core.models.MangoParent>
 
     ${model.text}  <br>
@@ -38,3 +38,49 @@
 <h2>JavaScript Alert</h2>
 
 <button class="button" onclick="myFunction()">Click me</button>
+
+
+
+
+<h1>test HTL code</h1>
+<div data-sly-test="${properties.checkbox}">
+    <h2>this is checkbox</h2>
+</div>
+
+<h1>Include HTL code</1>
+<div data-sly-include="mango1.html"></div>
+
+
+<h1>resource HTL code</h1>
+<div data-sly-resource="${Vation @resourceType='May/components/Vation'}"></div>
+
+<h1>List HTL code</h1>
+<div data-sly-set.items="${['java','html','css','react']}"></div>
+
+<ul data-sly-list="${items}">
+
+     <li> ${item}</li>
+</ul>
+
+<h1>repeat HTL code</h1>
+<ul data-sly-repeat="${items}">
+
+     <li> ${item}</li>
+</ul>
+
+<h1>template HTL code</h1>
+<div data-sly-template.mango="${@val1,val2,val3,val4}">
+
+      <h1>${val1}</h1>
+      <h1>${val2}</h1>
+      <h1>${val3}</h1>
+      <h1>${val4}</h1>
+
+</div>
+
+<h1>call HTL code</h1>
+<div data-sly-call="${mango @ val1='100',val2='90',val3='80',val4='70'}"></div>
+
+
+
+
