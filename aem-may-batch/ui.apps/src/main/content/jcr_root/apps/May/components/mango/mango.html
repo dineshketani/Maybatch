@@ -43,7 +43,7 @@
 
 
 <h1>test HTL code</h1>
-<div data-sly-test="${properties.checkbox}">
+<div data-sly-test=${15==15}>
     <h2>this is checkbox</h2>
 </div>
 
@@ -80,6 +80,21 @@
 
 <h1>call HTL code</h1>
 <div data-sly-call="${mango @ val1='100',val2='90',val3='80',val4='70'}"></div>
+
+<h1>Unwrap HTL code</h1>
+<div data-sly-unwrap>Dinesh</div><br>
+<sly>hello</sly>
+
+
+<h1>Text HTL code</h1>
+<div data-sly-text=${20==20}>hi</div>
+
+<h1>Attribute HTL code</h1>
+<div data-sly-attribute="${myAttributeMap}">Demo</div> <br>
+
+<h1>Element HTL code</h1>
+<div data-sly-element="${'span'}"> Text</div>
+
 
 
 
