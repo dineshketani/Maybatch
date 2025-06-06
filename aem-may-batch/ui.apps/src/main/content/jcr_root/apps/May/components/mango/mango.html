@@ -1,7 +1,7 @@
 
 
 
-<h1>Use Htl code</h1>
+  <h1>Use Htl code</h1>
 <div data-sly-use.model = com.adobe.aem.may.batch.core.models.MangoParent>
 
     ${model.text}  <br>
@@ -93,9 +93,28 @@
 <div data-sly-attribute="${myAttributeMap}">Demo</div> <br>
 
 <h1>Element HTL code</h1>
-<div data-sly-element="${'span'}"> Text</div>
+<div data-sly-element="${'span'}"> Text</div>  <br><br>
+
+
+<div data-sly-use.obj="com.adobe.aem.may.batch.core.models.OSGIConfigurationModel">
+    <div>Student Name: ${obj.studentName}</div>
+    <div>Roll Number: ${obj.rollNumber}</div>
+    <div>Regular: ${obj.regular}</div>
+
+    <div>Subjects: ${obj.subjects}</div>
+    
+
+    <div>Countries: </div>
+    <ul data-sly-list="${obj.countries}">
+        <li>${item}</li>
+    </ul>
+</div>
+
+    
 
 
 
 
 
+
+ 

@@ -52,6 +52,7 @@
                     <name>aem-may-batch.ui.apps</name>
                     <packageType>application</packageType>
                     <accessControlHandling>merge</accessControlHandling>
+                    <failOnError>false</failOnError>
                     <repositoryStructurePackages>
                         <repositoryStructurePackage>
                             <groupId>com.adobe.aem.may</groupId>
