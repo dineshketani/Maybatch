@@ -16,7 +16,6 @@ public @interface SimpleSchedulerConfiguration {
             type = AttributeType.STRING)
    public String scheduler_name() default "practice";
 
-    // cron job for every minute
     @AttributeDefinition(
         name = "Cron job expression",
         description = "Cron job expression",
